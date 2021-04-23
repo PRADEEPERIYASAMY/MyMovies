@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.mymovies.views.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_movieFragment"
+            app:destination="@id/nav_movieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_topRatedFragment"
+        android:name="com.example.mymovies.views.fragments.TopRatedFragment"
+        android:label="fragment_top_rated"
+        tools:layout="@layout/fragment_top_rated" >
+        <action
+            android:id="@+id/action_topRatedFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/watchFragment"
+        android:name="com.example.mymovies.views.fragments.WatchFragment"
+        android:label="WatchFragment" >
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_movieFragment"
+        android:name="com.example.mymovies.views.fragments.MovieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" >
+        <action
+            android:id="@+id/action_movieFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_savedFragment"
+        android:name="com.example.mymovies.views.fragments.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_savedFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.mymovies.views.fragments.InfoFragment"
+        android:label="InfoFragment" >
+        <argument
+            android:name="id"
+            app:argType="integer"/>
+        <action
+            android:id="@+id/action_infoFragment_to_watchFragment"
+            app:destination="@id/watchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_newMoviesFragment"
+        android:name="com.example.mymovies.views.fragments.NewMoviesFragment"
+        android:label="fragment_new_movies"
+        tools:layout="@layout/fragment_new_movies" >
+        <action
+            android:id="@+id/action_newMoviesFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+</navigation>

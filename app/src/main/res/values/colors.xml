@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--____________________________________Dark Theme____________________________________-->
+
+    //Red Variation
+    <color name="redBlack">#623A42</color>
+    <color name="red">#FF464F</color>
+    <color name="redLight">#FF575F</color>
+    <color name="redWhite">#FFE5E7</color>
+
+    //Orange Variation
+    <color name="orangeBlack">#624D3B</color>
+    <color name="orange">#FF8A34</color>
+    <color name="orangeLight">#FF974A</color>
+    <color name="orangeWhite">#FFEFE3</color>
+
+    //Yellow Variation
+    <color name="yellowBlack">#625B39</color>
+    <color name="yellow">#FFBC25</color>
+    <color name="yellowLight">#FFC542</color>
+    <color name="yellowWhite">#FEF3D9</color>
+
+    //Green Variation
+    <color name="greenBlack">#286053</color>
+    <color name="green">#25C685</color>
+    <color name="greenLight">#3DD598</color>
+    <color name="greenWhite">#D4F5E9</color>
+
+    //Blue Variation
+    <color name="blueBlack">#163E72</color>
+    <color name="blue">#005DF2</color>
+    <color name="blueLight">#0062FF</color>
+    <color name="blueWhite">#E3EEFF</color>
+
+    //Violet Variation
+    <color name="violetBlack">#393D69</color>
+    <color name="violet">#6952DC</color>
+    <color name="violetLight">#755FE2</color>
+    <color name="violetWhite">#EDEAFD</color>
+
+    //Grey Variation
+    <color name="greyBlack">#22343C</color>
+    <color name="grey">#30444E</color>
+    <color name="greyLight">#899A96</color>
+    <color name="greyWhite">#EDF1FA</color>
+
+    //Screens background color
+    <color name="bg_screen1">@color/redLight</color>
+    <color name="bg_screen2">@color/greenLight</color>
+    <color name="bg_screen3">@color/blueLight</color>
+    <color name="bg_screen4">@color/violetLight</color>
+
+   //dots inactive colors
+    <color name="dot_dark_screen1">@color/red</color>
+    <color name="dot_dark_screen2">@color/green</color>
+    <color name="dot_dark_screen3">@color/blue</color>
+    <color name="dot_dark_screen4">@color/violet</color>
+
+    //dots active colors
+    <color name="dot_light_screen1">@color/redWhite</color>
+    <color name="dot_light_screen2">@color/greenWhite</color>
+    <color name="dot_light_screen3">@color/blueWhite</color>
+    <color name="dot_light_screen4">@color/violetWhite</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+</resources>
